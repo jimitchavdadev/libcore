@@ -1,6 +1,7 @@
 name: libcore
 version: 2.1.0
-build: make
+build: gcc
 source: src/
-installHook: make install
+installHook: gcc -o hello hello.c && cp hello /usr/local/bin/
 dependencies: []
+install: echo "Installing libcore"
