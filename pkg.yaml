@@ -1,0 +1,6 @@
+name: libcore
+version: 2.1.0
+build: make
+source: src/
+installHook: make install
+dependencies: []
